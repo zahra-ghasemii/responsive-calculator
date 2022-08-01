@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        background-color: #e3e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #e3e0e0;
+}
+.top-header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e3e0e0;
+}
+.top-header p{
+    font-size: 10px;
+}
+.second-header{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e3e0e0;
+}
+.burger .line{
+    width: 25px;
+    height: 1px;
+    margin: 4px 0;
+    background-color: #333;
+}
+.second-header h3{
+    margin-left: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.second-header .burgerandheading{
+    display: flex;
+    align-items: center;
+}
+.input-group input{
+    padding: 30px 10px 15px 10px;
+    border: none;
+    width: 100%;
+    text-align: right;
+    font-size: 40px;
+    background-color: #e3e0e0;
+}
+.modes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #e3e0e0;
+}
+.modes p{
+    font-size: 12px;
+    margin-left: 37px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.not-active{
+    color: rgb(166, 165, 165);
+}
+
+.operations{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    align-items: center;
+    background-color: #f7f6f6;
+
+}
+.operations p{
+    padding: 15px;
+    padding: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:  1px solid #f6f4f4;
+}
+.secondoperations{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    height: 420px;
+}
+.secondoperations p{
+  padding: 28.5px;
+    border:  1px solid #c6c3c3;
+}
+
+.secondoperations span{
+margin-bottom: auto;
+margin-top: auto;
+}
+.numbers{
+    background-color: #fff;
+}
+.secondoperations p:hover{
+    background-color: rgb(164, 164, 164);
+}
+
+.firstoperation{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    background-color: #f7f6f6;
+}
+.firstoperation p{
+    padding: 15px;
+    padding: 15px 0;
+    border:  1px solid #f6f4f4;
+}
+.History{
+    background-color: #e3e0e0;
+    width: 320px;
+    height: 636px;
+    float: right;
+}
+.opColor{
+    background-color: rgb(232, 231, 231);
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.underLine{
+    width: 45px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.navHistory{
+    display: flex;
+    float: right;
+    width: 20%;
+    height: 20px;
+    background-color: #e3e0e0;
+}
+.close{
+    float: right;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+.close:hover{
+    background-color: red;
+}
+.window{
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+.burger{
+    width: 40px;
+    height: 35px;
+padding-left: 7px;
+padding-top: 8px;
+}
+.burger:hover{
+    background-color: rgb(212, 207, 207);  
+}
+.window:hover{
+    background-color: rgb(170, 169, 169);
+}
+.minimize{
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+.minimize:hover{
+    background-color: rgb(170, 169, 169);
+}
+.navHistoryRes{
+    display: flex;
+    float: right;
+    width: 40%;
+    height: 20px;
+    background-color: #e3e0e0;
+}
+.secondoperationRes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    height: 420px;
+}
+.secondoperationRes p{
+    padding: 28.5px;
+      border:  1px solid #c6c3c3;
+  }
+  
+  .secondoperationRes span{
+  margin-bottom: auto;
+  margin-top: auto;
+  }
+  .numbers{
+      background-color: #fff;
+  }
+  .secondoperationRes p:hover{
+      background-color: rgb(164, 164, 164);
+  }
+  .restart{
+    margin-left: 310px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  padding-top: 2px;
+  }
+  .restart:hover{
+    background-color: rgb(164, 164, 164);
+  }
+
+@media only screen and (max-width: 500px) {
+    body {
+     width: 100%;
+    }
+    .secondoperations{
+        width: 100%;
+    }
+    .not-active{
+        width: 100%;
+    }
+    .active{
+        width: 100%;
+    }
+
+.History{
+    display: none;
+}
+
+.secondoperations{
+    display: none;
+}
+.restart{
+    display: block;
+}
+   
+  }
+  @media only screen and (min-width: 502px){
+.navHistory{
+    display: none;
+}
+.restart{
+    display: none;
+}
+
+}
+@media only screen and (max-width: 1024px){
+
+.secondoperations{
+    display: none;
+}
+    }
+    
+    @media only screen and (min-width: 1026px){
+
+        .secondoperationRes{
+            display: none;
+        }
+            }
